@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# commitされたts,tsxファイルを取得
+files=`git log HEAD^..HEAD --name-only --oneline | grep -E "*.ts|tsx$" | tr "\r\n" " " | tr "\n" " "`
+
+if [ -n "${files}" ]; then
+  echo "[pre-push] Find *.tx|tsx, Exec Typechecking"
+
+  pnpm tsc
+  ret=$?
+  if [ $ret != 0 ]; then
+    echo "[pre-push] Typechecking error."
+    exit $ret
+  fi
+fi
+
+exit 0

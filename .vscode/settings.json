@@ -1,0 +1,20 @@
+{
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.colorTheme": "GitHub Dark Default",
+	"files.trimTrailingWhitespace": true,
+	"workbench.startupEditor": "newUntitledFile",
+	"editor.suggestSelection": "first",
+	"window.zoomLevel": 1,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"git.autofetch": true,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"git.ignoreMissingGitWarning": true,
+	"vsicons.dontShowNewVersionMessage": true,
+	"editor.tabSize": 2
+}

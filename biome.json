@@ -1,0 +1,27 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"organizeImports": { "enabled": true },
+	"files": {
+		"ignore": ["node_modules", ".next", ".swc"]
+	},
+	"linter": {
+		"enabled": true
+	},
+	"formatter": {
+		"enabled": true
+	},
+	"css": {
+		"linter": {
+			"enabled": true
+		},
+		"formatter": {
+			"enabled": true
+		},
+		"assists": {
+			"enabled": true
+		},
+		"parser": {
+			"cssModules": true
+		}
+	}
+}

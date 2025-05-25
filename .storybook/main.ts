@@ -7,6 +7,7 @@ module.exports = {
 		"@storybook/addon-essentials",
 		"@storybook/addon-interactions",
 		"@storybook/addon-mdx-gfm",
+		"msw-storybook-addon",
 		"@chromatic-com/storybook",
 	],
 
@@ -29,5 +30,5 @@ module.exports = {
 		reactDocgen: "react-docgen-typescript",
 	},
 
-  staticDirs: ['../public'],
+	staticDirs: ["../public"],
 };

@@ -1,0 +1,93 @@
+.wrapper {
+	background: #fff;
+	max-width: 800px;
+	margin-inline: auto;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 4px 0;
+}
+.title {
+	font-size: 24px;
+	/* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
+	font-family: "HiraginoSans-W6";
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+.teacherTable {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+.trEven {
+	background-color: #f8f9f9;
+}
+.trHeader {
+	color: #fff;
+}
+.thName {
+	position: relative;
+	padding: 8px 16px;
+	background-color: #24473b;
+	text-align: left;
+}
+.thOther {
+	position: relative;
+	padding: 8px 16px;
+	background-color: #4f6c62;
+	text-align: left;
+}
+.sortIconButton {
+	position: absolute;
+	right: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	background-color: #24473b;
+	border: none;
+}
+.sortIconButtonGray {
+	position: absolute;
+	right: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	background-color: #4f6c62;
+	border: none;
+}
+.sortIconUp {
+	transform: rotateX(180deg);
+}
+.tBodyTr > td {
+	/* 罫線の色がデザインから読み取れなかったため近い色を指定 */
+	border: 1px solid #cfded9;
+	padding: 10px;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.tBodyTr > td:nth-child(1) {
+	border-right: none;
+}
+.tBodyTr > td:nth-child(2) {
+	border-left: none;
+	border-right: none;
+}
+.tBodyTr > td:nth-child(3) {
+	border-left: none;
+}
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 4px;
+}
+.message {
+	color: #4f6c62;
+}

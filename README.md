@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Qubena職能課題
 
-## Getting Started
+## 動作確認手順
 
-First, run the development server:
+### 前提条件
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Mac
+- リポジトリをcloneしている
+- homebrewがインストールされている
+  1. `brew install mise`
+  2. リポジトリをクローンしたフォルダの直下で`mise install`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 手順
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- ローカル開発環境
+  1. `pnpm dev`
+  2. [http://localhost:3000/teachers](http://localhost:3000/teachers)にアクセス
+- Storybook
+  1. `pnpm sb`
+  2. [http://localhost:6006](http://localhost:6006/)にアクセス
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## アーキテクチャ選定理由
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+[アーキテクチャ選定理由](./docs/architecture.md)を参照
 
-## Learn More
+## Appendix
 
-To learn more about Next.js, take a look at the following resources:
+### MSWを利用してAPIリクエストをモックしなかった理由
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+公式ドキュメントや、実務の実装を参考にしながら実装してみたが、
+なぜかうまく効かず時間がかかりそうであったため断念。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### MSWを利用してやりたかったこと
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Storybookで、データ数が多い場合・該当データなし・ローディング中などをStoryとして表現
+- Vitestで詳細なユースケースや、カスタムフックのテスト実装

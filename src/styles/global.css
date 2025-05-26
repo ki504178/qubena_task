@@ -1,0 +1,12 @@
+body {
+	/* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
+	font-family: "HiraginoSans-W3";
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #212423;
+	margin: 0;
+}

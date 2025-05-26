@@ -1,0 +1,52 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 16px;
+	list-style: none;
+	/* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
+	font-family: "HiraginoSans-W6";
+	font-size: 12px;
+}
+.prevButton {
+	width: 48px;
+	height: 24px;
+	padding: 4px 16px;
+	margin-right: 8px;
+	border-radius: 4px;
+	border: none;
+	background-color: #e9eceb;
+	cursor: pointer;
+}
+.prevIcon {
+	transform: scale(-1, 1);
+}
+.disabled {
+	opacity: 0.3;
+	cursor: not-allowed;
+}
+.paginationButton {
+	width: 24px;
+	height: 24px;
+	border-radius: 4px;
+	border: none;
+	background-color: #e9eceb;
+	cursor: pointer;
+}
+.active {
+	background: #26453f;
+	color: #fff;
+	font-weight: bold;
+	cursor: not-allowed;
+}
+.nextButton {
+	width: 48px;
+	height: 24px;
+	padding: 4px 16px;
+	margin-left: 8px;
+	opacity: 0.3;
+	border-radius: 4px;
+	border: none;
+	background-color: #e9eceb;
+	cursor: pointer;
+}
